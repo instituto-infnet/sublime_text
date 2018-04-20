@@ -1,0 +1,126 @@
+{
+	"format": "3.0",
+	"replacements":
+	{
+		"cite":
+		{
+			"find": "(?i)(?:<p>)(.{1,})(?:</p>)(?:\\n</blockquote>)",
+			"greedy": true,
+			"replace": "<cite>\\1</cite>\n</blockquote>"
+		},
+		"digitaltutorstutorial":
+		{
+			"find": "(?i)(?:<p>)([a-zA-Z0-9!¡$%&\\()=?¿*+-_{};:,áéíóú'.\\s]{1,})(?:</p>\\n)(?:<p>)((?:https?://)?(?:www\\.)(?:digitaltutors.com/tutorial/)(?:...{1,}[^<]))(?:</p>)",
+			"greedy": true,
+			"replace": "<div class=\"pl-rec digitaltutors\">\n<h3>Digital Tutors:</h3>\n<h4>Acesse o Digital Tutors - \\1.</h4>\n<a href=\"\\2\">Entrar</a>\n</div><br>\n"
+		},
+		"digitaltutorslesson":
+		{
+			"find": "(?i)(?:<p>)([[a-zA-Z0-9!¡$%&\\()=?¿*+-_{};:,áéíóú'.\\s]{1,})(?:</p>\\n)(?:<p>)((?:https?://)?(?:www\\.)(?:digitaltutors.com/lesson/)(?:...{1,}[^<]))(?:</p>)",
+			"greedy": true,
+			"replace": "<div class=\"pl-rec digitaltutors\">\n<h3>Digital Tutors:</h3>\n<h4>Acesse o Digital Tutors - \\1.</h4>\n<a href=\"\\2\">Entrar</a>\n</div><br>\n"
+		},
+		"img":
+		{
+			"find": "(?i)(<p>\\[IMG\\]</p>)",
+			"greedy": true,
+			"replace": "<p class=\"pl-text-center\">[IMG]</p>"
+		},
+		"pl_link":
+		{
+			"find": "(?i)(<p><a href=)",
+			"greedy": true,
+			"replace": "<p><a class=\"pl-link\" href="
+		},
+		"pl_table":
+		{
+			"find": "(?i)(<table>)",
+			"greedy": true,
+			"replace": "<table class=\"pl-table\">"
+		},
+		"titles":
+		{
+			"find": "(?i)(<h1>|<h2>|<h3>|<h4>|<h5>|<h6>)",
+			"greedy": true,
+			"replace": "\n\\1"
+		},
+		"to":
+		{
+			"find": "(?i)([}{:=~]{1,})",
+			"greedy": true,
+			"replace": "\\1"
+		},
+		"vimeo":
+		{
+			"find": "(?i)(?:<p>)(?:https?://)?(?:www\\.)?vimeo(?:\\.com/)([0-9]{8,})(?:</p>)",
+			"greedy": true,
+			"replace": "<div class=\"pl-embed-video\"><iframe src=\"https://player.vimeo.com/video/\\1?title=0&byline=0&portrait=0\" width=\"640\" height=\"470\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>\n"
+		},
+		"youtube_embed":
+		{
+			"find": "(?i)(?:<p>)(?:https?://)(?:https?://)?(?:www\\.)?youtu(?:.be/|be\\.com/watch\\?v=|be\\.com/v/)([A-Za-z0-9_-]{8,})(?:</p>)",
+			"greedy": true,
+			"replace": "<div class=\"pl-embed-video\">\n	<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/\\1\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n"
+		},
+		"pluralsight": {
+      "find": "<p>(.{1,})<\/p>\n<p>((?:https?:\/\/)?(?:www\\.)?app.pluralsight.com\/.{1,})<\/p>",
+      "greedy": true,
+      "replace": "<div class=\"pl-rec digitaltutors\">\n<h3>Pluralsight:</h3>\n<h4>\\1.</h4>\n<a href=\"\\2\">Entrar</a>\n</div><br>\n"
+    },
+     "style": {
+      "find": "\\sstyle=\".+?\"",
+      "greedy": true,
+      "replace": ""
+    },
+    "span": {
+      "find": "<span>",
+      "greedy": true,
+      "replace": ""
+    },
+    "closespan": {
+      "find": "<\/span>",
+      "greedy": true,
+      "replace": ""
+    },
+    "br": {
+      "find": "<br \/>",
+      "greedy": true,
+      "replace": ""
+    },
+    "empty_p": {
+      "find": "<p>?\\s?.<\/p>",
+      "greedy": true,
+      "replace": ""
+    },
+    "n": {
+      "find": "\\n",
+      "greedy": true,
+      "replace": ""
+    },
+    "fonte": {
+      "find": "(<p><em>Fonte:)(\\s.+)(<\/em><\/p>)",
+      "greedy": true,
+      "replace": "<p><small>Fonte:\\2</small></p>"
+    },
+    "fonte_2": {
+      "find": "<p>(<em>)(Fonte:)(<\/em>)(.+)(<em>)(.+)(<\/em>)(<\/a><\/p>)",
+      "greedy": true,
+      "replace": "<p><small>Fonte: \\6</small></p>"
+    },
+    "yt_format": {
+      "find": "<p><a href=\"(?:https?:\/\/)?(?:www\\.)?youtu(?:\\.be\/|be\\.com\/watch\\?v=|be\\.com\/v\/)[A-Za-z0-9_-]{8,}?.+?\">(.+)<\/a><\/p>",
+      "greedy": true,
+      "replace": "<p>\\1</p>"
+    },
+    "yt_format_time": {
+      "find": "<p>((?:https?:\/\/)?(?:www\\.)?youtu(?:\\.be\/|be\\.com\/watch\\?v=|be\\.com\/v\/)[A-Za-z0-9_-]{8,}?.+)?(&.+)<\/p>",
+      "greedy": true,
+      "replace": "<p>\\1</p>"
+    },
+    "link_format": {
+      "find": "(<p>(.+)<\/p>?\n?<p><a href=\"(.+)\">(.+)<\/a><\/p>)",
+      "greedy": true,
+      "replace": "<p><a href=\"\\3\">\\2</a></p>"
+    }
+	}
+}
