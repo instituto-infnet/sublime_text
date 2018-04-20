@@ -1,0 +1,83 @@
+[
+  {
+    "caption": "Reg Replace: Youtube",
+    "command": "reg_replace",
+    "args": {"replacements": ["youtube_embed"]}
+  },
+  {
+    "caption": "Reg Replace: Vimeo",
+    "command": "reg_replace",
+    "args": {"replacements": ["vimeo"]}
+  },
+  {
+    "caption": "Reg Replace: Filtro TO",
+    "command": "reg_replace",
+    "args": {"replacements": ["to"]}
+  },
+  {
+    "caption": "Reg Replace: Table",
+    "command": "reg_replace",
+    "args": {"replacements": ["pl_table"]}
+  },
+  {
+    "caption": "Reg Replace: IMG",
+    "command": "reg_replace",
+    "args": {"replacements": ["img"]}
+  },
+  {
+    "caption": "Reg Replace: Link",
+    "command": "reg_replace",
+    "args": {"replacements": ["pl_link"]}
+  },
+  {
+    "caption": "Reg Replace: Titles",
+    "command": "reg_replace",
+    "args": {"replacements": ["titles"]}
+  },
+  {
+    "caption": "Reg Replace: Cite",
+    "command": "reg_replace",
+    "args": {"replacements": ["cite"]}
+  },
+  {
+    "caption": "Reg Replace: Digital Tutors Tutorial",
+    "command": "reg_replace",
+    "args": {"replacements": ["digitaltutorstutorial"]}
+  },
+  {
+    "caption": "Reg Replace: Digital Tutors Lesson",
+    "command": "reg_replace",
+    "args": {"replacements": ["digitaltutorslesson"]}
+  },
+  {
+    "caption": "Reg Replace: Pluralsight",
+    "command": "reg_replace",
+    "args": {"replacements": ["pluralsight"]}
+  },
+  {
+    "caption": "Fonte",
+    "command": "reg_replace",
+    "args": {"replacements": ["fonte"]}
+  },
+  {
+    "caption": "Fonte_2",
+    "command": "reg_replace",
+    "args": {"replacements": ["fonte_2"]}
+  },
+  {
+    "caption": "Link Format",
+    "command": "reg_replace",
+    "args": {"replacements": ["link_format"]}
+  },
+  {
+    "caption": "Reg Replace: All",
+    "command": "reg_replace",
+    "args": {"replacements": ["youtube_embed","vimeo","pl_table","img","pl_link","titles","cite","digitaltutorstutorial","digitaltutorslesson","pluralsight","fonte","fonte_2"]}
+  },
+  {
+    "caption": "Cleaner",
+    "command": "reg_replace",
+    "args": {"replacements": ["style","span","closespan","br","empty_p","yt_format","yt_format_time"]}
+  },
+
+]
