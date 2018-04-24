@@ -23,7 +23,8 @@ RegReplace, é o plugin que realiza a limpeza final e aplica as classes CSS a pa
 
 Estão definidos dois comandos principais:
 
-Cleaner: Realiza a limpeza e ajuestes finais no código;
-All: Aplica as classes CSS, embeda os vídeos do Youtube e Vimeo e mais alguns detalhes;
+**Cleaner:** Realiza a limpeza e ajuestes finais no código;
+
+**All:** Aplica as classes CSS, embeda os vídeos do Youtube e Vimeo e mais alguns detalhes;
 
 Para executar esse comandos, aperte ctrl+shift+p e digite o comando.
